@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik</title>
+</head>
+<body class="flex flex-col items-center">
+    <nav class="p-5 flex flex-row items-end justify-center gap-2 w-full">
+        <span class="height-1 font-title font-bold text-white">Katik</span> <span class="height-1 text-white">Kalulator Matematik</span>
+
+    </nav>
+    <div class="flex bg-grey w-710 items-center">
+
+    
+        <section class="bg-white m-2 px-5 py-2 flex flex-col items-center gap-2">
+            <h2>Welcome to Katik</h2>
+            <p>Hai Sobat, Selamat datang di Katik :)</p>
+            <p>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bagnun datar</p>
+            <div class="flex flex-col w-full text-center">
+                <input type="radio" class="radio-button" id="optionA" name="options" value="persegi" checked>
+                <label class="radio-label" for="optionA">Persegi</label>
+    
+                <input type="radio" class="radio-button" id="optionB" name="options" value="p.panjang">
+                <label class="radio-label" for="optionB">P. Panjang</label>
+            </div>
+
+            <div id="bagianPersegi" class="w-full">
+                <div class="flex flex-col w-full text-center card">
+                    <div class="flex flex-col w-full text-center bg-blue text-white font-bold py-5">
+                        Luas Persegi
+                    </div>
+                    <div class="py-2 flex flex-col gap-5">
+                        <div class="imageStore">
+                            <img src="../Assets/luasPersegi.png" alt="">
+                        </div>
+                        <div class="flex flex-col items-center gap-5">
+                            <h1 class="judul-luas">Hitung Luas Persegi</h1>
+                            <input id="sisiluasPersegi" class="w-full h-2" type="text" placeholder="Nilai Sisi">
+                            <button id="hitungBtnLuasPersegi" class="bg-blue text-white no-border p-1 rounded">Hitung</button>
+                            <div id="hasilLuas">Masukkan Sisi dan klik hitung</div>
+                        </div>
+                        <div class="w-full flex flex-col items-end">
+                            <button id="resetBtnLuasPersegi" class="bg-orange text-white no-border p-1 rounded">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-full text-center card">
+                    <div class="flex flex-col w-full text-center bg-blue text-white font-bold py-5">
+                        Keliling Persegi
+                    </div>
+                    <div class="py-2 flex flex-col gap-5">
+                        <div class="imageStore">
+                            <img src="../Assets/kelilingPersegi.png" alt="">
+                        </div>
+                        <div class="flex flex-col items-center gap-5">
+                            <h1 class="judul-luas">Hitung Keliling Persegi</h1>
+                            <input id="sisikelilingPersegi" class="w-full h-2" type="text" placeholder="Nilai Sisi">
+                            <button id="hitungBtnKelilingPersegi" class="bg-blue text-white no-border p-1 rounded">Hitung</button>
+                            <div id="hasilKeliling">Masukkan Sisi dan klik hitung</div>
+                        </div>
+                        <div class="w-full flex flex-col items-end">
+                            <button id="resetBtnKelilingPersegi" class="bg-orange text-white no-border p-1 rounded">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="bagianPersegiPanjang" class="w-full">
+                <div class="flex flex-col w-full text-center card">
+                    <div class="flex flex-col w-full text-center bg-blue text-white font-bold py-5">
+                        Luas Persegi Panjang
+                    </div>
+                    <div class="py-2 flex flex-col gap-5">
+                        <div class="imageStore">
+                            <img src="../Assets/luaspersegipanjang.png " alt="">
+                        </div>
+                        <div class="flex flex-col items-center gap-5">
+                            <h1 class="judul-luas">Hitung Luas Persegi Panjang</h1>
+                            <input id="lebarluasPersegiPanjang" class="w-full h-2" type="text" placeholder="Nilai Lebar">
+                            <input id="panjangluasPersegiPanjang" class="w-full h-2" type="text" placeholder="Nilai Panjang">
+                            <button id="hitungBtnLuasPersegiPanjang" class="bg-blue text-white no-border p-1 rounded">Hitung</button>
+                            <div id="hasilLuasPersegiPanjang">Masukkan Sisi dan klik hitung</div>
+                        </div>
+                        <div class="w-full flex flex-col items-end">
+                            <button id="resetBtnLuasPersegiPanjang" class="bg-orange text-white no-border p-1 rounded">Reset</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col w-full text-center card">
+                    <div class="flex flex-col w-full text-center bg-blue text-white font-bold py-5">
+                        Keliling Persegi Panjang
+                    </div>
+                    <div class="py-2 flex flex-col gap-5">
+                        <div class="imageStore">
+                            <img src="../Assets/kelilingpersegipanjang.png" alt="">
+                        </div>
+                        <div class="flex flex-col items-center gap-5">
+                            <h1 class="judul-luas">Hitung Keliling Persegi Panjang</h1>
+                            <input id="lebarkelilingPersegiPanjang" class="w-full h-2" type="text" placeholder="Nilai Lebar">
+                            <input id="panjangkelilingPersegiPanjang" class="w-full h-2" type="text" placeholder="Nilai Panjang">
+                            <button id="hitungBtnKelilingPersegiPanjang" class="bg-blue text-white no-border p-1 rounded">Hitung</button>
+                            <div id="hasilKelilingPersegiPanjang">Masukkan Sisi dan klik hitung</div>
+                        </div>
+                        <div class="w-full flex flex-col items-end">
+                            <button id="resetBtnKelilingPersegiPanjang" class="bg-orange text-white no-border p-1 rounded">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../JS/script.js"></script>
+</body>
+</html>
